@@ -1,6 +1,5 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import map from './assets/map.png'
 import './App.css'
 
 function clickMe() {
@@ -10,7 +9,20 @@ function clickMe() {
 function App() {
   
 
-  return <button onClick={clickMe}>DON'T PRESS</button>
+  return (
+  
+    <div>
+      <h1>Map of Acotar</h1>
+      <div>
+        <img src={map} alt="map" />
+
+      </div>
+      <button onClick={clickMe}>DON'T PRESS</button>
+    </div>
+  
+    
+
+  );
 }
 
 export default App
